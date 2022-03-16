@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Título da página</title>
+	<link rel="stylesheet" href="/stylesheets/css/styles.css">
+</head>
+
+<body>
+	<div class="title">
+		<h1>
+			Gallows game
+		</h1>
+	</div>
+	<form action="/game" method="post" class="create-game">
+		<div>
+			<label>Category: </label>
+			<input type="text" name="category" class="form-control" placeholder="Enter a category" required>
+		</div>
+		<div>
+			<label>Word: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 </label>
+			<input type="text" name="word" class="form-control" placeholder="Enter a word" required>
+		</div>
+		<button class="btn btn-primary">Start Game</button>
+	</form>
+
+</body>
+
+</html>

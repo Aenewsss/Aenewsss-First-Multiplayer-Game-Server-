@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Game Time</title>
+	<link rel="stylesheet" href="/stylesheets/css/styles.css">
+	<script src="/javascript/index.js" defer></script>
+</head>
+
+<body>
+	<div class="title">
+		<h1>
+			Gallows game
+		</h1>
+	</div>
+	<div id="game">
+		<h3>Category: <%= category %>
+		</h3>
+		<h3>Word: <span id="response"></span></h3>
+		<h4>Letters: 
+			<span id="qtd-letters">
+				<%= word.length %>
+			</span> 
+		</h4>
+
+		<h4>Chances: 
+			<span id="chances"> <%= chances %> 
+			</span> 
+		</h4>
+
+		<input hidden name="category" value="<%= category %>">
+		<input hidden name="word" value="<%= word %>" id="word">
+		
+		<button class="btn btn-secondary" value="A" id="A" onclick="checkLetter(this.id)">A</button>
+		<button class="btn btn-secondary" value="B" id="B" onclick="checkLetter(this.id)">B</button>
+		<button class="btn btn-secondary" value="C" id="C" onclick="checkLetter(this.id)">C</button>
+		<button class="btn btn-secondary" value="D" id="D" onclick="checkLetter(this.id)">D</button>
+		<button class="btn btn-secondary" value="E" id="E" onclick="checkLetter(this.id)">E</button>
+		<button class="btn btn-secondary" value="F" id="F" onclick="checkLetter(this.id)">F</button>
+		<button class="btn btn-secondary" value="G" id="G" onclick="checkLetter(this.id)">G</button>
+		<button class="btn btn-secondary" value="H" id="H" onclick="checkLetter(this.id)">H</button>
+		<button class="btn btn-secondary" value="I" id="I" onclick="checkLetter(this.id)">I</button>
+		<button class="btn btn-secondary" value="J" id="J" onclick="checkLetter(this.id)">J</button>
+		<button class="btn btn-secondary" value="K" id="K" onclick="checkLetter(this.id)">K</button>
+		<button class="btn btn-secondary" value="L" id="L" onclick="checkLetter(this.id)">L</button>
+		<button class="btn btn-secondary" value="M" id="M" onclick="checkLetter(this.id)">M</button>
+		<button class="btn btn-secondary" value="N" id="N" onclick="checkLetter(this.id)">N</button>
+		<button class="btn btn-secondary" value="O" id="O" onclick="checkLetter(this.id)">O</button>
+		<button class="btn btn-secondary" value="P" id="P" onclick="checkLetter(this.id)">P</button>
+		<button class="btn btn-secondary" value="Q" id="Q" onclick="checkLetter(this.id)">Q</button>
+		<button class="btn btn-secondary" value="R" id="R" onclick="checkLetter(this.id)">R</button>
+		<button class="btn btn-secondary" value="S" id="S" onclick="checkLetter(this.id)">S</button>
+		<button class="btn btn-secondary" value="T" id="T" onclick="checkLetter(this.id)">T</button>
+		<button class="btn btn-secondary" value="U" id="U" onclick="checkLetter(this.id)">U</button>
+		<button class="btn btn-secondary" value="V" id="V" onclick="checkLetter(this.id)">V</button>
+		<button class="btn btn-secondary" value="W" id="W" onclick="checkLetter(this.id)">W</button>
+		<button class="btn btn-secondary" value="X" id="X" onclick="checkLetter(this.id)">X</button>
+		<button class="btn btn-secondary" value="Y" id="Y" onclick="checkLetter(this.id)">Y</button>
+		<button class="btn btn-secondary" value="Z" id="Z" onclick="checkLetter(this.id)">Z</button>
+	</div>
+
+	<div id="final-message">
+		<p id="message"></p>
+	</div>
+</body>
+
+</html>
